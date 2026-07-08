@@ -45,6 +45,7 @@ dtb-$(CONFIG_ARCH_STM32) += \
 	stm32mp153c-lxa-tac-gen3.dtb \
 	stm32mp153c-mecio1r1.dtb \
 	stm32mp157a-avenger96.dtb \
+	stm32mp157a-bearpi-micro-hm.dtb \
 	stm32mp157a-dhcor-avenger96.dtb \
 	stm32mp157a-dk1.dtb \
 	stm32mp157a-dk1-scmi.dtb \

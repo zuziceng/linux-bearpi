@@ -476,6 +476,10 @@ static struct panel_desc *panel_dpi_probe(struct device *dev)
 	drm_bus_flags_from_videomode(&vm, &bus_flags);
 	desc->bus_flags = bus_flags;
 
+	/* Set default values for missing properties */
+	desc->bpc = 8;
+	desc->bus_format = MEDIA_BUS_FMT_RGB888_1X24;
+
 	/* We do not know the connector for the DT node, so guess it */
 	desc->connector_type = DRM_MODE_CONNECTOR_DPI;
 
